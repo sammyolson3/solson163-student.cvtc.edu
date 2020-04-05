@@ -1,14 +1,7 @@
-/*
- * Auto-generated content from the Brackets New Project extension.
- */
+$(function() {
 
-/*jslint vars: true, plusplus: true, devel: true, nomen: true, indent: 4, maxerr: 50 */
-/*global $, window, document */
+    setTimeout(function() {
+        $('.flyInText').removeClass('hidden');
+    }, 500);
 
-// Simple jQuery event handler
-$(document).ready(function () {
-    "use strict";
-    $("#clickMe").click(function (e) {
-        alert("hello world!");
-    });
-});
+})();
