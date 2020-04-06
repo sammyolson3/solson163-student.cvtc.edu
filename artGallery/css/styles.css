@@ -32,7 +32,7 @@ body {
 }
 
 .flyInText.hidden li {
-    /*opacity: 0;*/
+    opacity: 0;
 }
 
 .flyInText.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
@@ -48,3 +48,5 @@ body {
 .flyInText.hidden li:nth-child(11) { transform: translateX(-200px) translateY(50px); }
 .flyInText.hidden li:nth-child(12) { transform: translateX(-100px) translateY(-200px); }
 .flyInText.hidden li:nth-child(13) { transform: translateX(-200px) translateY(120px); }
+.flyInText.hidden li:nth-child(14) { transform: translateX(-30px) translateY(-200px); }
+.flyInText.hidden li:nth-child(15) { transform: translateX(30px) translateY(150px); }
