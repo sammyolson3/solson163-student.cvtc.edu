@@ -7,6 +7,78 @@ body {
     background-color: #f5f5f0;
 }
 
+/* nav css */
+#navContent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333;
+    width: 40%;
+    height: 100%;
+    transition: 3s;
+}
+
+#navContent ul{
+    margin: 0;
+    padding: 20px 0;
+}
+
+#navContent li {
+    list-style: none;
+}
+
+#navContent a {
+    padding: 10px 20px;
+    color: #f5f5f0;
+    display: block;
+    text-decoration: underline;
+}
+
+#navBtn {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #F4F;
+    border: none;
+    outline: none;
+}
+
+#navBtn span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #F4F;
+    position: absolute;
+    top: 24px;
+    transition: .3s;
+}
+
+
+#navBtn span:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    background: #F4F;
+    transition: .3s;
+}
+
+#navBtn span:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    background: #F4F;
+    transition: .3s;
+}
+
+/* title css */
 .flyInText {
     list-style: none;
     position: absolute;
@@ -50,3 +122,6 @@ body {
 .flyInText.hidden li:nth-child(13) { transform: translateX(-200px) translateY(120px); }
 .flyInText.hidden li:nth-child(14) { transform: translateX(-30px) translateY(-200px); }
 .flyInText.hidden li:nth-child(15) { transform: translateX(30px) translateY(150px); }
+
+
+
