@@ -24,14 +24,17 @@ body {
 }
 
 #navContent li {
+    font-size: 35px;
+    font-family: 'Courier';
     list-style: none;
+    border: none;
 }
 
 #navContent a {
     padding: 10px 20px;
     color: #f5f5f0;
     display: block;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #navBtn {
@@ -42,11 +45,10 @@ body {
     height: 50px;
     box-sizing: border-box;
     cursor: pointer;
-    background: #F4F;
     border: none;
     outline: none;
 }
-
+/*
 #navBtn span {
     display: block;
     width: 35px;
@@ -58,7 +60,7 @@ body {
 }
 
 
-#navBtn span:before {
+#navBtn span::before {
     content: '';
     position: absolute;
     top: -10px;
@@ -68,7 +70,7 @@ body {
     transition: .3s;
 }
 
-#navBtn span:after {
+#navBtn span::after {
     content: '';
     position: absolute;
     top: 10px;
@@ -77,6 +79,7 @@ body {
     background: #F4F;
     transition: .3s;
 }
+
 
 /* title css */
 .flyInText {
