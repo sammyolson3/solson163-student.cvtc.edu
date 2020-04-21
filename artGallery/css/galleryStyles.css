@@ -15,9 +15,14 @@ body {
 	padding-top: 20px;
 }
 @media only screen and (max-width:620px) {
-  .left {
+	.left {
+		position: absolute;
+		top: -25px;
 		width:100%;
-  }
+		height:100%;
+	 text-align: center;
+		padding: 0%;
+	}
 }
 
 @media only screen and (max-width:620px) {
@@ -35,21 +40,34 @@ body {
 .right {
 	right: 0;
 }
-
-.content {
-	position: absolute;
+.words  {
+	position: relative;
+	font-size: 20px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: left;
+	padding: 15px;
+}
+
+.content  {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: left;
+	padding: 25px;
 }
 
 .content img {
+
 	width: 120%;
 }
 
-.gridBtn {
-  position: absolute;
+#gridBtn {
+	position: absolute;
+	font-size: 35px;
+	border: none;
 
 }
 
