@@ -13,16 +13,19 @@ body {
 }
 
 .row {
-  display: -ms-flexbox; /* IE10 */
+  display: -ms-flexbox;
+  /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
+  -ms-flex-wrap: wrap;
+  /* IE10 */
   flex-wrap: wrap;
   padding: 0 4px;
 }
 
 
 .column {
-  -ms-flex: 25%; /* IE10 */
+  -ms-flex: 25%;
+  /* IE10 */
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
@@ -34,7 +37,7 @@ body {
   width: 100%;
 }
 
-#backBtn{
+#backBtn {
   position: absolute;
   top: 30px;
   left: 30px;
@@ -59,6 +62,7 @@ body {
   padding: 15px;
   border-radius: 4px;
 }
+
 @media screen and (max-width: 800px) {
   .column {
     -ms-flex: 50%;
