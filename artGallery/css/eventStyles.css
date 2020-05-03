@@ -1,0 +1,78 @@
+body {
+  background-color: #f5f5f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 4rem 0;
+  font-family: 'Courier';
+}
+
+
+button {
+  background-color: #f5f5f0;
+  border: none;
+}
+.covid19 {
+  background-color: rgb(247, 233, 48);
+  width: 400px;
+  height:100px;
+  border: 15px solid red;
+  border-radius: 2.5%;
+  padding: 4px;
+  margin: 2px;
+
+}
+table {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 50rem;
+}
+  tr:nth-child(even) th {
+      color: rgb(136, 139, 150);
+      font-weight: normal;
+  }
+
+  th,
+  td {
+      padding: 0.5rem 1rem;
+  }
+
+  th {
+      font-weight: normal;
+      border-top: thin dotted #ccc;
+  }
+
+  td {
+      font-size: 0.8rem;
+      font-weight: bold;
+      line-height: 1.4;
+      border-radius: 0.2rem;
+      transition: opacity 0.3s ease;
+  }
+
+  td > span {
+      font-size: 0.8em;
+      font-weight: normal;
+      display: block;
+      width: 100%;
+  }
+
+.da-vinci {
+  background-color: rgb(240, 184, 212);
+}
+.picasso{
+  background-color: rgb(177, 206, 145);
+}
+.michaelangelo{
+  background-color: rgb(245, 167, 143);
+}
+.andy-warhol {
+  background-color: rgb(173, 129, 129);
+}
+.dali {
+  background-color: rgb(204, 197, 236);
+}
+.van-goh{
+  background-color: rgb(140, 206, 214);
+}
