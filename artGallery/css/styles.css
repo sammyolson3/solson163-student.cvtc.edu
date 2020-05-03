@@ -13,7 +13,7 @@ body {
     top: 0;
     left: 0;
     background: #333;
-    width: 650px;
+    width: 0;
     height: 100%;
 }
 
@@ -47,6 +47,7 @@ body {
     cursor: pointer;
     border: none;
     outline: none;
+    background-color: #f5f5f0;
 }
 
 /* title css */
