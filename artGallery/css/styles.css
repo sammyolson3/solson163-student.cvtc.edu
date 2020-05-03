@@ -111,6 +111,9 @@ body {
     opacity: 0;
 }
 
+
+/* placing title letters in different locations for the animation */
+
 .flyInText.hidden li:nth-child(1) {
     transform: translateX(-200px) translateY(-200px);
 }
