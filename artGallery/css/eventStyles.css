@@ -7,22 +7,31 @@ body {
   font-family: 'Courier';
 }
 
-
-
 button {
   background-color: #f5f5f0;
   border: none;
 }
 .covid19 {
+position: relative;
+left: 15em;
   background-color: rgb(247, 233, 48);
-  width: 400px;
+  width: 600px;
   height:100px;
-  border: 15px solid red;
+  border: 12px solid red;
   border-radius: 2.5%;
   padding: 4px;
-  margin: 2px;
+  margin: 0 auto;
 
 }
+.covid19 > p {
+  font-size: medium;
+}
+
+.title {
+text-align: right;
+}
+
+
 table {
   align-items: center;
   justify-content: center;
