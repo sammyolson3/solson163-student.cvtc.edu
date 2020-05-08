@@ -13,7 +13,7 @@ body {
     position: absolute;
     width: 300px;
     height: 100%;
-    background: #000;
+    background: #0d0d0d;
     left: -300px;
     transition-duration: 1s;
     z-index: 2000;
@@ -25,9 +25,15 @@ body {
 
 #sideNav ul li {
     list-style: none;
-    color: #fff;
-    font-size: 20px;
+    font-size: 30px;
     padding: 20px 24px;
+}
+
+#sideNav a {
+    font-family: '';
+    text-decoration: none;
+    color: #f5f5f0;
+
 }
 
 #sideNav .navBtn {
@@ -35,8 +41,10 @@ body {
     top: 30px;
     left: 330px;
     z-index: 2000;
+    cursor: pointer;
 
 }
+
 
 .navBtn span:nth-child(1) {
     width: 45px;
@@ -62,6 +70,29 @@ body {
     display: block;
     margin-top: 4px;
 }
+
+
+/* hide middle span, turn outside spans into x and move onto the nav */
+.navBtn.open span:nth-child(1) {
+  transform: rotate(45deg);
+    margin-top: 5px;
+    margin-left: -90px;
+    background: #f5f5f0;
+}
+
+.navBtn.open span:nth-child(2) {
+    height: 0;
+    opacity: 0;
+
+}
+
+.navBtn.open span:nth-child(3) {
+  transform: rotate(-45deg);
+   margin-top: -8px;
+    margin-left: -90px;
+    background: #f5f5f0;
+}
+
 
 /* title css */
 .flyInText {
@@ -92,6 +123,7 @@ body {
     opacity: 0;
 }
 
+/* give each title letter a different starting location for animation */
 .flyInText.hidden li:nth-child(1) {
     transform: translateX(-200px) translateY(-200px);
 }
@@ -150,4 +182,26 @@ body {
 
 .flyInText.hidden li:nth-child(15) {
     transform: translateX(30px) translateY(150px);
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)  {
+      .flyInText li {
+          font-size: 1em;
+      }
+
+      .#sideNav {
+          width: 768px
+      }
+}
+
+@media screen and (max-width: 600px) {
+    .flyInText li {
+          font-size: 1em;
+      }
+
+    .#sideNav {
+        width: 600px;
+    }
 }
