@@ -1,8 +1,6 @@
-
-
 body {
 	background-color: #f5f5f0;
-color: black;
+	color: black;
 }
 
 .split {
@@ -69,15 +67,15 @@ color: black;
 	position: absolute;
 	font-size: 35px;
 	border: none;
-  outline: none;
+	outline: none;
 }
 
 #gridBtn:hover {
 	opacity: 70%;
 }
 #gridBtn:active {
-  color:transparent;
-} 
+	color: transparent;
+}
 
 .glyphicon {
 	background-color: transparent;

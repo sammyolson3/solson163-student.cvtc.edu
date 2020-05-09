@@ -1,7 +1,7 @@
-//Get the button
+//	Get the upBtn and scroll to top
 var upBtn = document.getElementById('upBtn');
 
-window.onscroll = function() {
+window.onscroll = function () {
 	scrollFunction();
 };
 
