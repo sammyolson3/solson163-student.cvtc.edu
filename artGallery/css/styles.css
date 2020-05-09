@@ -45,6 +45,7 @@ body {
 
 }
 
+/* creates 3 line Nav button */
 
 .navBtn span:nth-child(1) {
     width: 45px;

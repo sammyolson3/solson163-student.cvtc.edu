@@ -1,11 +1,39 @@
 body {
-
+  margin: 0 auto;
 }
 
 form {
-
+  margin: 60px;
 }
 
-input[type=submit] {
-    background-color:
+.btnFile {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btnSubmit {
+  height: 35px;
+  width: 65px;
+  padding: 3px;
+  font: 15px sans-serif;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+}
+
+.btnSubmit:hover,
+.btnSubmit:focus {
+  outline: none;
+  background: #000;
+  color: #FFF;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 10px;
+  margin: 13px 0;
+  box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius: 10px;
+  resize: vertical;
 }
