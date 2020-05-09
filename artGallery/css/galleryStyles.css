@@ -1,14 +1,10 @@
-
-body {
-	font-family: 'Arial';
-	color: black;
+*{
 	background-color: #f5f5f0;
-	color: black;
-	font-family: 'Courier';
-
 }
 
-
+body {
+color: black;
+}
 
 .split {
 	height: 100%;
@@ -20,7 +16,7 @@ body {
 	padding-top: 20px;
 }
 
-@media only screen and (max-width:620px) {
+@media only screen and (max-width: 620px) {
 	.left {
 		position: absolute;
 		top: -8px;
@@ -31,20 +27,20 @@ body {
 	}
 }
 
-@media only screen and (max-width:620px) {
+@media only screen and (max-width: 620px) {
 	.right {
 		display: none;
 	}
 }
 
-
-
 .left {
 	left: 0;
+	font-weight: 300;
 }
 
 .right {
 	right: 0;
+	font-family: "Courier New", Courier, monospace;
 }
 
 .words {
@@ -67,7 +63,6 @@ body {
 }
 
 .content img {
-
 	width: 120%;
 }
 
@@ -75,5 +70,16 @@ body {
 	position: absolute;
 	font-size: 35px;
 	border: none;
+  outline: none;
+}
 
+#gridBtn:hover {
+	opacity: 70%;
+}
+#gridBtn:active {
+  color:transparent;
+} 
+
+.glyphicon {
+	background-color: transparent;
 }

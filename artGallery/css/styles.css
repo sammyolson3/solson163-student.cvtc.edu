@@ -191,7 +191,7 @@ body {
           font-size: 1em;
       }
 
-      .#sideNav {
+      #sideNav {
           width: 768px
       }
 }
@@ -201,7 +201,7 @@ body {
           font-size: 1em;
       }
 
-    .#sideNav {
+    #sideNav {
         width: 600px;
     }
 }
