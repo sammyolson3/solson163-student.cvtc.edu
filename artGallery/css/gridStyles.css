@@ -1,93 +1,90 @@
 * {
-  box-sizing: border-box;
-
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: 'Courier';
+	margin: 0;
+	font-family: 'Courier';
 }
 
 .header {
-  text-align: center;
-  padding: 32px;
+	text-align: center;
+	padding: 32px;
 }
 
 .row {
-  display: -ms-flexbox;
-  /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap;
-  /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
+	display: -ms-flexbox;
+	/* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap;
+	/* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
 }
 
-
 .column {
-  -ms-flex: 25%;
-  /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+	-ms-flex: 25%;
+	/* IE10 */
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
 }
 
 .column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
 }
 
 #backBtn {
-  background-color: #f5f5f0;
-  position: absolute;
-  top: 60px;
-  left: 56px;
-  font-size: 50px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 4px;
+	background-color: #f5f5f0;
+	position: absolute;
+	top: 60px;
+	left: 56px;
+	font-size: 50px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 4px;
 }
 #backBtn:hover {
 	opacity: 70%;
 }
 #backBtn:active {
-  color:transparent;
-} 
+	color: transparent;
+}
 
 #upBtn {
-  background-color:transparent;
-  position: fixed;
-  bottom: -4px;
-  right: 10px;
-  z-index: 99;
-  font-size: 50px;
-  border: none;
-  outline: none;
-
+	background-color: transparent;
+	position: fixed;
+	bottom: -4px;
+	right: 10px;
+	z-index: 99;
+	font-size: 50px;
+	border: none;
+	outline: none;
 }
 
 #upBtn:hover {
 	opacity: 70%;
 }
 #upBtn:active {
-  color:transparent;
-} 
+	color: transparent;
+}
 
 @media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
+	.column {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	}
 }
 
 @media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
+	.column {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
 }
