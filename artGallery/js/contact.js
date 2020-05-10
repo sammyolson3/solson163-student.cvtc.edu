@@ -1,3 +1,6 @@
+
+
+
 function submitClicked() {
     var name = document.getElementById('artistName').value;
     var email = document.getElementById('email').value;

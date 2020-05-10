@@ -63,3 +63,27 @@ input[type=text] {
 .contactInfo a:hover {
   text-decoration: underline;
 }
+
+
+.warn {
+  margin-top: 30px;
+  margin-left: 40px;
+  height: 50px;
+  width: 575px;
+  border: dotted 3px;
+  border-radius: 15px;
+  text-align: center;
+  animation:blink 2.5s infinite;
+}
+.warn p {
+  color: black;
+  padding-top: 15px;
+}
+
+@keyframes blink {
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
