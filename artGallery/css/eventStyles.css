@@ -46,6 +46,10 @@ td > span {
 	width: 100%;
 }
 
+td:hover {
+  opacity: .7;
+}
+
 .da-vinci {
 	background-color: rgb(240, 184, 212);
 }

@@ -1,5 +1,11 @@
-
-
+//selected input turns correlating label color gray
+$(document).on('focus active', 'input',function(){
+    $('label[for='+$(this).attr('id')+']').addClass('active');
+});
+//unselected input returns to color
+$(document).on('blur', 'input',function(){
+    $('label[for='+$(this).attr('id')+']').removeClass('active');
+});
 
 function submitClicked() {
     var name = document.getElementById('artistName').value;

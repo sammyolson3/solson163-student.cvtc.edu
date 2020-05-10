@@ -117,3 +117,7 @@ input[type=text] {
     99%{    color:transparent;  }
     100%{   color: #000;    }
 }
+
+.active {
+  color: #606060;
+}
