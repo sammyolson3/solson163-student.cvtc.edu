@@ -21,23 +21,25 @@ body {
 }
 
 form {
-  margin-left: 600px;
-}
-
-.btnFile {
-  font-size: 15px;
-  cursor: pointer;
+  position: relative;
+  width; 400px;
+  height: auto;
+  left: 25%;
+  resize: vertical;
 }
 
 .btnSubmit {
+  position: relative;
+  left: 400px;
   height: 35px;
-  width: 65px;
+  width: 200px;
   padding: 3px;
-  font: 15px sans-serif;
+  font-size: 1.5em;
   border: 1px solid #333;
   border-radius: 5px;
   background: none;
   cursor: pointer;
+  box-shadow: 5px 5px gray;
 }
 
 .btnSubmit:hover,
@@ -60,6 +62,7 @@ input[type=text] {
 
 .container {
   margin-bottom: 10px;
+
 }
 
 #statement {
@@ -67,7 +70,9 @@ input[type=text] {
 }
 
 .contactInfo {
-  margin-top: 90px;
+  position: relative;
+  left: 10px;
+  top: 4
 }
 
 .contactInfo a {
@@ -88,8 +93,9 @@ input[type=text] {
 }
 
 .warn {
+  position: relative;
   margin-top: 30px;
-  margin-left: 40px;
+  left: 200px;
   height: 50px;
   width: 575px;
   border: dotted 3px;
@@ -97,6 +103,7 @@ input[type=text] {
   text-align: center;
   animation:blink 2.5s infinite;
 }
+
 .warn p {
   color: black;
   padding-top: 15px;
