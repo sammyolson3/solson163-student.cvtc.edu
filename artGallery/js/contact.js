@@ -6,22 +6,32 @@ function submitClicked() {
     var artTitle = document.getElementById('artworkTitle').value;
     var file = document.getElementById('image').value;
     var fileExt = file.split('.').pop();
+    var extLower = fileExt.toLowerCase();
 
-    if (fileExt == "jpg" || fileExt == "png") {
-        var r = confirm("Please confirm your information.\n" +
-                        "Name: " + name + "\n" +
-                        "Email: " + email + "\n" +
-                        "Phone #: " + phone + "\n" +
-                        "Message: " + message + "\n" +
-                        "Artwork Title: " + artTitle + "\n" +
-                        "File Name: " + file);
-        if (r) {
-            alert("Submitted successful!");
-        } else {
-            alert("Submit cancelled.");
-        }
+    if (name != "" && email != "" && phone != "" && message != "" && artTitle != "" && file != "") {
+        var valid = true;
     } else {
-      alert("Please submit JPG or PNG image file");
+        var valid = false;
     }
 
+    if (valid) {
+        if (extLower == "jpg" || extLower == "png") {
+            var r = confirm("Please confirm your information.\n" +
+                            "Name: " + name + "\n" +
+                            "Email: " + email + "\n" +
+                            "Phone #: " + phone + "\n" +
+                            "Message: " + message + "\n" +
+                            "Artwork Title: " + artTitle + "\n" +
+                            "File Name: " + file);
+            if (r) {
+                alert("Submitted successful!");
+            } else {
+                alert("Submit cancelled.");
+            }
+        } else {
+            alert("Please enter a jpg or png file type.");
+        }
+    } else {
+        alert("Please fill in all fields.");
+    }
 }
