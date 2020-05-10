@@ -7,6 +7,7 @@ function submitClicked() {
     var file = document.getElementById('image').value;
     var fileExt = file.split('.').pop();
     var extLower = fileExt.toLowerCase();
+    var body = "";
 
     if (name != "" && email != "" && phone != "" && message != "" && artTitle != "" && file != "") {
         var valid = true;
@@ -15,22 +16,20 @@ function submitClicked() {
     }
 
     if (valid) {
-        if (extLower == "jpg" || extLower == "png") {
-            var r = confirm("Please confirm your information.\n" +
-                            "Name: " + name + "\n" +
-                            "Email: " + email + "\n" +
-                            "Phone #: " + phone + "\n" +
-                            "Message: " + message + "\n" +
-                            "Artwork Title: " + artTitle + "\n" +
-                            "File Name: " + file);
-            if (r) {
-                alert("Submitted successful!");
-            } else {
-                alert("Submit cancelled.");
-            }
-        } else {
-            alert("Please enter a jpg or png file type.");
-        }
+        body = "Dear Art Gallery,%0D%0A%0D%0A" +
+               message + "%0D%0A%0D%0A" +
+               "Thank you,%0D%0A" +
+               name + "%0D%0A" +
+               email + "%0D%0A" +
+               phone;
+
+        // constructed the body of the message above.
+        // %0D%0A is the new line character.
+        // you can add parameters below by adding a ? to the end
+        // of mailto: and the & symbol to add multiple parameters.
+        // mailto:...?subject=subject&body=body&cc=cc....
+
+        window.open('mailto:example@gmail.com?subject=' + artTitle + '&body=' + body)
     } else {
         alert("Please fill in all fields.");
     }
