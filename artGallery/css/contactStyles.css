@@ -45,7 +45,7 @@ form {
 .btnSubmit:hover,
 .btnSubmit:focus {
   outline: none;
-  background: #000;
+  background: #555;;
   color: #FFF;
 }
 
@@ -106,7 +106,8 @@ input[type=text] {
 
 .warn p {
   color: black;
-  padding-top: 15px;
+  font-size: 1.1em;
+  padding-top: 13px;
 }
 
 @keyframes blink {

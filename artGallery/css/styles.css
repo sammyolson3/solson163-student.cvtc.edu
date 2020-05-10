@@ -51,7 +51,7 @@ body {
 .navBtn span:nth-child(1) {
     width: 45px;
     height: 4px;
-    background: #0d0d0d;;
+    background: #0d0d0d;
     display: block;
     margin-top: 4px;
 }
@@ -60,7 +60,7 @@ body {
     width: 30px;
     height: 4px;
     margin: 0 auto;
-    background: #0d0d0d;;
+    background: #0d0d0d;
     display: block;
     margin-top: 4px;
 }
@@ -68,7 +68,7 @@ body {
 .navBtn span:nth-child(3) {
     width: 45px;
     height: 4px;
-    background: #0d0d0d;;
+    background: #0d0d0d;
     display: block;
     margin-top: 4px;
 }
@@ -137,7 +137,8 @@ body {
     margin-right: 50px;
     font-weight: 300;
     font-size: 6em;
-    color: #0d0d0d;;
+    text-shadow: 2px 2px #666666;
+    color: #fff;
 
     opacity: 1;
     transition: all 2.5s ease;
@@ -245,6 +246,7 @@ body {
   background-color: #555;
   transform: rotate(45deg);
   transition: all 0.5s ease;
+  box-shadow: 2px 2px #666666;
 }
 
 .sqr:hover{
@@ -253,14 +255,13 @@ body {
 
 h3 {
   font-size: 1.2em;
+  text-shadow: 1px 1px #666666;
 }
 
 i.fab {
   position: relative;
   bottom: 65px;
   font-size: 3em;
-  z-index: 1000;
-
 }
 
 
