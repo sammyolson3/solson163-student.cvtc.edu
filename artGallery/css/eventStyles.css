@@ -5,35 +5,6 @@
 	font-family: 'Courier';
 }
 
-.covidBtn {
-	background-color: #f5f5f0;
-	border: none;
-	outline: none;
-    cursor: pointer;
-}
-
-.covidBtn:hover {
-	opacity: 70%;
-}
-
-.covidBtn:active {
-	color: transparent;
-}
-.covid19 {
-	position: relative;
-	left: 10em;
-	background-color: rgb(247, 233, 48);
-	width: 600px;
-	height: 100px;
-	border: 5px solid red;
-	border-radius: 50%;
-	padding: 20px;
-	margin: 0 auto;
-}
-.covid19 > p {
-	font-size: medium;
-}
-
 .title {
 	text-align: right;
 }
@@ -44,6 +15,7 @@ table {
 	width: 100%;
 	max-width: 50rem;
 }
+
 tr:nth-child(even) th {
 	color: rgb(136, 139, 150);
 	font-weight: normal;
@@ -77,18 +49,23 @@ td > span {
 .da-vinci {
 	background-color: rgb(240, 184, 212);
 }
+
 .picasso {
 	background-color: rgb(177, 206, 145);
 }
+
 .michaelangelo {
 	background-color: rgb(245, 167, 143);
 }
+
 .andy-warhol {
 	background-color: rgb(173, 129, 129);
 }
+
 .dali {
 	background-color: rgb(204, 197, 236);
 }
+
 .van-goh {
 	background-color: rgb(140, 206, 214);
 }
