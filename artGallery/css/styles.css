@@ -100,7 +100,7 @@ body {
     list-style: none;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 25%;
     transform: translateX(-50%) translateY(-50%);
 }
 
@@ -109,7 +109,7 @@ body {
     margin-right: 50px;
     font-family: serif;
     font-weight: 300;
-    font-size: 4em;
+    font-size: 6em;
     color: #000;
 
     opacity: 1;
