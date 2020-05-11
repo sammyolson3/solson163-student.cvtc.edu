@@ -1,23 +1,37 @@
 body {
   margin: 0 auto;
 }
-#sideNav .navBtn {
-    position: absolute;
-    top: 30px;
-    left: 330px;
-    z-index: 2000;
-    cursor: pointer;
-
-}
 
 #contactTitle {
-  position: relative;
-  font-size: 3.4em;
-  top: 40px;
-  bottom: 30px;
   text-align: center;
-  margin-bottom: 70px;
-  z-index: -1;
+  position: relative;
+  top: 40px;;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+#contactTitle span {
+  color: #333;
+  text-transform: uppercase;
+  display: block;
+  font-size: 60px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  position: relative;
+  animation: text 2s 1;
+}
+
+@keyframes text {
+  0%{
+    color: #333;
+  }
+  30% {
+    letter-spacing: 20px;
+  }
+  85%{
+    letter-spacing: 5px;
+  }
 }
 
 form {
@@ -37,7 +51,7 @@ form {
   font-size: 1.5em;
   border: 1px solid #333;
   border-radius: 5px;
-  background: none;
+  background-color: lightgray;
   cursor: pointer;
   box-shadow: 5px 5px gray;
 }
@@ -46,7 +60,7 @@ form {
 .btnSubmit:focus {
   outline: none;
   background: #555;;
-  color: #FFF;
+  color: #FFF
 }
 
 input[type=text] {
@@ -57,7 +71,6 @@ input[type=text] {
   margin: 13px 0;
   box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
   border-radius: 10px;
-  resize: vertical;
 }
 
 .container {
@@ -88,6 +101,7 @@ input[type=text] {
   font-size: 1.5em;
   border: solid 1px gray;
   border-radius: 5px;
+  background-color: lightgray;
   padding: 3px;
   box-shadow: 5px 5px gray;
 }
@@ -117,6 +131,8 @@ input[type=text] {
     99%{    color:transparent;  }
     100%{   color: #000;    }
 }
+
+/*active color of label for selected input*/
 
 .active {
   color: #606060;

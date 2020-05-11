@@ -51,7 +51,7 @@ img:hover {
 	position: absolute;
 	top: 60px;
 	left: 56px;
-	font-size: 50px;
+	font-size: 60px;
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -60,6 +60,7 @@ img:hover {
 }
 #backBtn:hover {
 	opacity: 70%;
+    font-size: 70px;
 }
 #backBtn:active {
 	color: transparent;
@@ -71,13 +72,14 @@ img:hover {
 	bottom: -4px;
 	right: 10px;
 	z-index: 99;
-	font-size: 50px;
+	font-size: 60px;
 	border: none;
 	outline: none;
 }
 
 #upBtn:hover {
 	opacity: 70%;
+    font-size: 70px;
 }
 #upBtn:active {
 	color: transparent;

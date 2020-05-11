@@ -7,7 +7,9 @@ $(document).on('blur', 'input',function(){
     $('label[for='+$(this).attr('id')+']').removeClass('active');
 });
 
-function submitClicked() {
+
+//submit button opens email and takes user input to generate email
+function btn() {
     var name = document.getElementById('artistName').value;
     var email = document.getElementById('email').value;
     var phone = document.getElementById('phoneNum').value;
@@ -41,11 +43,4 @@ function submitClicked() {
     } else {
         alert("Please fill in all fields.");
     }
-}
-
-
-function btn() {
-
-  submitClicked();
-
 }
